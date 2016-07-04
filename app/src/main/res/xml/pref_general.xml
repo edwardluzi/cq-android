@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="pref_storage"
+        android:title="@string/pref_list_title_storage"
+        android:defaultValue="0"
+        android:entries="@array/pref_list_item_titles_storage"
+        android:entryValues="@array/pref_list_item_values_storage"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:key="pref_questions_per_test"
+        android:title="@string/pref_edit_title_questions_per_test"
+        android:defaultValue="@string/pref_edit_default_questions_per_test"
+        android:selectAllOnFocus="true"
+        android:inputType="numberDecimal"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+</PreferenceScreen>

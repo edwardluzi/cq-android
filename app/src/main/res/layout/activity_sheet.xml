@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="org.goldenroute.cq.SheetActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_control"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="true"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/layout_index"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/checkbox_impediment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/checkbox_title_impediment" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_view_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/text_view_title_question"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <RadioButton
+                    android:id="@+id/radio_button_choice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_button_title_choice1" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_choice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_button_title_choice2" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_choice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_button_title_choice3" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_choice4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_button_title_choice4" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:theme="@android:style/Holo.SegmentedButton">
+
+            <ImageButton
+                android:id="@+id/button_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/button_title_help"
+                android:src="@android:drawable/ic_menu_help"
+                android:theme="@style/Widget.AppCompat.Button.Borderless" />
+
+            <ImageButton
+                android:id="@+id/button_goto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/button_title_goto"
+                android:src="@android:drawable/ic_menu_mylocation"
+                android:theme="@style/Widget.AppCompat.Button.Borderless" />
+
+            <ImageButton
+                android:id="@+id/button_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:contentDescription="@string/button_title_previous"
+                android:src="@android:drawable/ic_media_previous"
+                android:theme="@style/Widget.AppCompat.Button.Borderless" />
+
+            <ImageButton
+                android:id="@+id/button_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/button_title_next"
+                android:src="@android:drawable/ic_media_next"
+                android:theme="@style/Widget.AppCompat.Button.Borderless" />
+
+            <ImageButton
+                android:id="@+id/button_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/button_title_finish"
+                android:src="@android:drawable/ic_menu_send"
+                android:theme="@style/Widget.AppCompat.Button.Borderless" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
