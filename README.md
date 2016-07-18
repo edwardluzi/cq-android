@@ -14,19 +14,6 @@ On the question screen, you could check the correct answer for current question,
 
 About the test sheet.
 
-Each test sheet is a text file located at TestSheets folder, this folder could be created in either device storage or a SD memory card. The text file should be in UTF-8 format, and organized as below:
+Each test sheet is a text file located at TestSheets folder, this folder could be created in either device storage or a SD memory card. The text file should be in UTF-8 format, attached please find a sample test sheet:
 
-[I]LK0001
-[Q]我国现行法律体系中专门针对无线电管理的最高法律文件及其立法机关是：
-[A]中华人民共和国无线电管理条例，国务院和中央军委
-[B]中华人民共和国无线电管理办法，工业和信息化部
-[C]中华人民共和国电信条例，国务院
-[D]中华人民共和国业余无线电台管理办法，工业和信息化部
-
-
-[I]LK0002
-[Q]我国现行法律体系中专门针对业余无线电台管理的最高法律文件及其立法机关是：
-[A]业余无线电台管理办法，工业和信息化部
-[B]个人业余无线电台管理暂行办法，国家体委和国家无委
-[C]业余无线电台管理暂行规定，国家体委和国家无委
-[D]中华人民共和国电信条例，国务院
+https://github.com/edwardluzi/cq-android/files/368232/Radio.Operator.Certification.Level.A.v2015a.txt)
