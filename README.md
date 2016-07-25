@@ -16,4 +16,4 @@ About the test sheet.
 
 Each test sheet is a text file located at TestSheets folder, this folder could be created in either device storage or a SD memory card. The text file should be in UTF-8 format, attached please find a sample test sheet:
 
-https://github.com/edwardluzi/cq-android/files/368232/Radio.Operator.Certification.Level.A.v2015a.txt)
+https://github.com/edwardluzi/cq-android/files/368232/Radio.Operator.Certification.Level.A.v2015a.txt
